@@ -1,5 +1,6 @@
-body {
+body{
     background: lightgreen !important;
+    color: green !important;
     text-align: center !important;
     margin: 0;
     padding: 0;
@@ -22,4 +23,8 @@ body {
     width: 100%;
     max-width: 400px;
     box-shadow: 0 0 100px rgba(0,0,0,0.2);
+}
+#player1_name, #player2_name{
+    display: inline-block;
+    margin-left: 20px;
 }
