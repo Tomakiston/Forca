@@ -14,6 +14,7 @@ document.getElementById("player_answer").innerHTML = "Turno de resposta: " + pla
 function send() {
     let get_word = document.getElementById("word").value;
     let word = get_word.toLowerCase();
+
     let charAt1 = word.charAt(1);
     let length_divide_2 = Math.floor(word.length/2);
     let charAt2 = word.charAt(length_divide_2);
@@ -22,6 +23,7 @@ function send() {
     let remove_charAt1 = word.replace(charAt1, "_");
     let remove_charAt2 = remove_charAt1.replace(charAt2, "_");
     let remove_charAt3 = remove_charAt2.replace(charAt3, "_");
+    
     let question_word = "<h4 id='word_display'>P. " + remove_charAt3 + "</h4>";
     let input_box = "<br>Resposta: <input type='text' id='input_check_box'>";
     let check_button = "<br> <br> <button class='btn btn-info' onclick='check()'>Verificar</button>";
