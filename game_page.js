@@ -2,6 +2,7 @@ let player1_name = localStorage.getItem("player1_name");
 let player2_name = localStorage.getItem("player2_name");
 let player1_score = 0;
 let player2_score = 0;
+let word;
 
 
 document.getElementById("player1_name").innerHTML = player1_name + ": ";
@@ -13,7 +14,7 @@ document.getElementById("player_answer").innerHTML = "Turno de resposta: " + pla
 
 function send() {
     let get_word = document.getElementById("word").value;
-    let word = get_word.toLowerCase();
+    word = get_word.toLowerCase();
 
     let charAt1 = word.charAt(1);
     let length_divide_2 = Math.floor(word.length/2);
